@@ -1,0 +1,31 @@
+[server]
+host = "127.0.0.1"
+port = 8000
+
+# Empty means disabled. When set, clients must send:
+# Authorization: Bearer <api_key>
+api_key = ""
+
+[fitten]
+base_url = "https://fc.fittenlab.cn"
+chat_endpoint = "/codeapi/chat_auth"
+models_base_url = "https://api.fittentech.com"
+models_endpoint = "/codeapi/chat/models"
+fetch_models = true
+timeout = 120
+
+# Platform query params mirrored from the VS Code extension.
+ide = "vsc"
+ide_version = "1.125.1"
+extension_version = "1.0.6"
+session_id = "fitten2api"
+os = "Windows_NT"
+os_version = "10.0.0"
+extra_query = ""
+
+# Headers mirrored from the VS Code webview when fetching chat models.
+user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.125.1 Chrome/148.0.7778.97 Electron/42.2.0 Safari/537.36"
+api_version = "v2"
+origin = "https://cs.fittentech.com"
+referer = "https://cs.fittentech.com/"
+accept_language = "zh-CN"
